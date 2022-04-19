@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+          crossorigin="anonymous"
+    >
+    <title>Журнал</title>
+    <style>
+        #inputh {
+         width: 100%;
+        } 
+       </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-blue fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/boynextdoor">Электронный журнал</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="file:///C:/Users/%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80/Desktop/%D0%9A%D1%83%D1%80%D1%81%D0%B0%D1%87/jurnal.html">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="file:///C:/Users/%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80/Desktop/%D0%9A%D1%83%D1%80%D1%81%D0%B0%D1%87/starosta.html">Связь со старостой</a>
+          </li>
+        </ul>
+        <form class="d-flex" action="file:///C:/Users/%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80/Desktop/%D0%9A%D1%83%D1%80%D1%81%D0%B0%D1%87/login.html">
+          <button class="btn btn-outline-success" type="submit">Войти</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+      <div class="b-example-divider" style="height: 70px;"></div>
+      <div class="container px-6 py-5" id="hanging-icons">
+        <h4 class="mb-3">Выбор старосты</h4>
+      <div class="my-3">
+        <div class="form-check">
+          <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
+          <label class="form-check-label" for="credit">Выбрать всех</label>
+        </div>
+        <div class="form-check">
+          <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
+          <label class="form-check-label" for="debit">Определенных</label>
+        </div>
+      </div>
+      <select class="form-select" multiple aria-label="multiple select example">
+        <option value="starosta">ЛПб-ИСиТ-18-1</option>
+        <option value="starosta">ЛПб-ИСиТ-18-2</option>
+        <option value="starosta">ЛПб-ИСиТ-19-1</option>
+        <option value="starosta">ЛПб-ИСиТ-19-2</option>
+        <option value="starosta">ЛПб-ИСиТ-20-1</option>
+        <option value="starosta">ЛПб-ИСиТ-20-2</option>
+        <option value="starosta">ЛПб-ИСиТ-21-1</option>
+        <option value="starosta">ЛПб-ИСиТ-21-2</option>
+    </select>
+      <div class="input-group">
+        <span class="input-group-text">Сообщение</span>
+        <textarea class="form-control" aria-label="Сообщение" style="margin-top: 0px; margin-bottom: 0px; height: 115px;"></textarea>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="customFile">Загрузить файлы</label>
+        <input type="file" class="form-control" id="customFile">
+      </div>
+      <button type="button" class="btn btn-success">Отправить</button>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
