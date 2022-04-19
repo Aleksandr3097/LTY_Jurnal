@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+          crossorigin="anonymous"
+    >
+    <title>Журнал</title>
+    <style>
+        #inputh {
+         width: 100%;
+        } 
+       </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/boynextdoor">Электронный журнал</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="file:///C:/Users/%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80/Desktop/%D0%9A%D1%83%D1%80%D1%81%D0%B0%D1%87/jurnal.html">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="file:///C:/Users/%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80/Desktop/%D0%9A%D1%83%D1%80%D1%81%D0%B0%D1%87/starosta.html">Связь со старостой</a>
+              </li>
+            </ul>
+            <form class="d-flex" action="file:///C:/Users/%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80/Desktop/%D0%9A%D1%83%D1%80%D1%81%D0%B0%D1%87/login.html">
+              <button class="btn btn-outline-success" type="submit">Войти</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="b-example-divider" style="height: 50px;"></div>
+      <div class="container px-6 py-5" id="hanging-icons">
+        <h2 class="pb-2 border-bottom">Предметы</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="col d-flex align-items-start">
+            
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcTR8oUzSB6i9zeze6NHL68qoSLRu90MjcDA&usqp=CAU"
+                         alt="Добавить"
+                         style="max-width: 100px;"
+                    >
+              
+            <div>
+              <h5>Отметить студента</h5>
+              <button type="button"
+                                data-bs-toggle="modal"
+                                data-bs-target="#exampleModal3"
+                                class="btn btn-primary"
+                        >
+                            Добавить
+                        </button>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+
+                <img src="https://mycloud.kz/wp-content/uploads/2018/11/sdhsd.png"
+                         alt="Администрирование в ИС"
+                         style="max-width: 100px;"
+                    >
+
+            <div>
+              <h5>Администрирование в ИС</h5>
+              <button type="button"
+                                data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"
+                                class="btn btn-primary"
+                        >
+                            Подробнее
+                        </button>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpqZak69A1juQw08_1CpdDCXNrW8DSUFV77Q&usqp=CAU"
+                         alt="Методы и средства проектирования"
+                         style="max-width: 100px;"
+                    >
+            <div>
+              <h5>Методы и средства проектирования</h5>
+              <button type="button"
+                                data-bs-toggle="modal"
+                                data-bs-target="#exampleModal2"
+                                class="btn btn-primary"
+                        >
+                            Подробнее
+                        </button>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+
+            <img src="https://almamater13.ru/wp-content/uploads/proizvodstvennyj-menedzhment-kem-mozhno-rabotat_0.jpg"
+                     alt="Экономика предприятия и производственный менеджмент"
+                     style="max-width: 100px;"
+                >
+
+        <div>
+          <h5>Экономика предприятия и производственный менеджмент</h5>
+          <button type="button"
+                            data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"
+                            class="btn btn-primary"
+                    >
+                        Подробнее
+                    </button>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+
+        <img src="https://3.bp.blogspot.com/-8KW8aaywnNg/XLYaGlZB8CI/AAAAAAAAFAc/XofSvLyb6iUCIFVGEHZfxIDhviKrlCEMQCLcBGAs/s1600/%25D0%259C%25D0%25BE%25D0%25B1%25D0%25B8%25D0%25BB%25D1%258C%25D0%25BD%25D1%258B%25D0%25B5%2B%25D0%25BE%25D0%25BF%25D0%25B5%25D1%2580%25D0%25B0%25D1%2586%25D0%25B8%25D0%25BE%25D0%25BD%25D0%25BD%25D1%258B%25D0%25B5%2B%25D1%2581%25D0%25B8%25D1%2581%25D1%2582%25D0%25B5%25D0%25BC%25D1%258B%2B%2528%25D0%25BC%25D0%25BE%25D0%25B1%25D0%25B8%25D0%25BB%25D1%258C%25D0%25BD%25D0%25B0%25D1%258F%2B%25D0%259E%25D0%25A1%2529%2B%25281%2529.png"
+                 alt="Операционные системы мобильных устройств"
+                 style="max-width: 100px;"
+            >
+
+    <div>
+      <h5>Операционные системы мобильных устройств</h5>
+      <button type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                        class="btn btn-primary"
+                >
+                    Подробнее
+                </button>
+    </div>
+  </div>
+  <div class="col d-flex align-items-start">
+
+    <img src="https://botany.by/wp-content/uploads/2021/05/logo-seminar-2.png"
+             alt="Мониторинг лесных экосистем"
+             style="max-width: 100px;"
+        >
+
+<div>
+  <h5>Мониторинг лесных экосистем</h5>
+  <button type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    class="btn btn-primary"
+            >
+                Подробнее
+            </button>
+</div>
+</div>
+<div class="col d-flex align-items-start">
+
+    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoGCBMTExcTExUXGBcYGRkXGhgXGRkYGRoZGhkYGBcXGRgaHysjGhwpHxcXJDUkKCwuMjIyGSE5PDcxOysxMi4BCwsLDg4PGRAQGTEfFx8xLi4xMTExMTExLjExMS4xMTExMTExMTExLjExMTsxPC4xMTEuMS4xMTExMTExNi4xPP/AABEIAKgBLAMBIgACEQEDEQH/xAAcAAAABwEBAAAAAAAAAAAAAAAAAQIDBAUHBgj/xABPEAACAQIDBAUGCAwDBwQDAAABAgMAEQQSIQUxQVEGEyJhcQcyQoGRoRQjUmJygrHBMzQ1Q1NzkqKys9HwFSR0JVRjwsPh4haD0vFEk6P/xAAXAQEBAQEAAAAAAAAAAAAAAAAAAQID/8QAGxEBAQEAAgMAAAAAAAAAAAAAAAEREkECITH/2gAMAwEAAhEDEQA/ANbiwyJqd/Nv70pl5GmuqaJuLc+4VEw85ncq/YI/NnQ2599WRKroN45cf+9RUP4E0VmhNwBrGx0I5qfRPupyHHGQ2jXdvzaW7qkhS+p3cqjY6FQQydlxoCOXJhxFA/KANSbmq3FLJKTGFWxHHevfpxpU2PMbASJbS9wbhueU/dv+2nPh2dl6kam4JYWHOiq7CbMTDyXl7QN8reidNQV4GrR9pLl7A0HPT3U1i4EAtKescjjuXwHCqeNHdwb3Ciw5H/vQWbs02vEbv74Cs06b7NXDzHFQBSj3TERcBfRiV+Sb699jxrVoFFriqXpZsjrEMsahnAs6/pF5d7C+ns8AzPyfbaGy8YIme+CxRBVjuRzYKSeBHmt3WO4VuD8+X2cf6+qsC2xshVBga/USnNDIR+Dl+ST7j3eFaB5IOkjTRNgcSbYnDDL2jq8Q0Vu8roD3ZTxoNABpMm6/LX+/Vekxaacvs4f09VOCiloaKXd4a+zWkwC2nLT+nutThFVmhTcvDxH22++lx7hSZd3sPsN6gXTUm8ev7DTtNvvHr+6iwqkIO34L9p/8aWKTDvY99vYB95NCnDUYnt08XF7ctTVfjpBmF6UibJKo3kVlvlb2u2Jlj2Vhm7chDzNrZEGoB7rDMe4DnXYdItqxYTDyYiUmyDRd2ZvRUd5NhWXbNws4BJ/HtoXYn9Dhye0x4rcbvAcqKkbF2THiZ1iQf5PBkKOU0w1JPPUknx5GtJAGHjLfnGGnzRUXYOzYsLAiKLRxCy82beWPeTc04vxr5nvbl/fCioeA2OC3XuLtvHj8o/dUjEQuuoJB+2reNQBpTGLe4tvoI+A2jIBrrbeDvHrpSMs73ewHvPcKiDD5dT/YqZhpY5BkcaeiwoEYjBlXshJAGbwv3U11xAs4BH97xwqxgwEqFirC27ta6DieVVKXacqr5ubKBqeNr6HxOg76Bp4QrKY2fMdcm8Dmx+ypWCcK5aYsz+jcaKO5fvpcGGlgObgfrnuv39+6pjSK5C2LORvb0Rz5UEV4YpGLC+b3CmPhjp2d9uNKxIZScnaAPabQLpw77VFlxTE3jjdl5jcTxt3UHXYuJGGUqGbeOY7wd4qPDBKhzMc49jr9zfbUnBumTMDcHe1GWz3sbKN/fRhFxW0lHmEEk2tcak7hrup6PEIi3Y9o719K/wAm1Uk0SzMwRQb9lWvYhgeItZhUjC4VsKc0nbvoHuTb5pvqPGip8uB67WUZV4KD7CTzqnx+J+CmynMvBtAQeTcD4+3nVw2LDoXJsvADea56xmcg+AHIcz30C8HI+I1bs31I+7vq6ihVQABTUGFCgAcKlR++gQDbwp9Bca0l1ooWtp7KCt6Q7ChxELROtkbXTQq28SL33rI9oQYjCYgSppi8JYm27EYcce/s3B42vxUVumauZ6abA+EIHi7M0Xaibnzib5poq26O7YixkEeKiPZcag71O5lbvU6f/dWtYz0H22Nn4nKwyYTFPkkQ/wD4+J3WPJG+z6OuyRjhyoD3G/P+/wCvsp6m2XSnBVZpC8R3/brRSjQ+BpVtaUaArUgjUeB+6nBRUBWpMQ08bn2m9LakO4FhxOg9l6BmEdtzzI+y1N4hAXFxenoz229Vct5RdtPhogkOuInPVQr85tC/goN7+FRpyHTfacWMxZVj/kcBrJl3TYg+bEvyrHS30uYq76F7Je74vEfhptW/4UfoRLysLX8KpeiGw1lZI07UGGc9o/n8UfwkpvvVDoO/wrv5Ev8AFruHnHnRTbJ1ptuRalLGBuFHGgAsNwpMj8BQMzudy0iNLC5p0ALTEr3/AKUDcj5vCobuUOZeHOpoWmpoxxoG4tqyMfjLFeKWtfx51ZxpBP2gMrjlofWBvrm8awQg3tytv8KdMrS5AFyyDU5WALKOLG4CjvNBb47EypdFAbhffYcT3m3CqLGbSAvdsp13nlwuNL91FHiXJZIUMg3XzWiv6TNJ50nqt31XSwwQfGzupy8XIWNe5Vvr76CbszFSzDKq35s5yxqOSrvbxqXLhHv5zN3g2HgANLVw+1On2ZjHgIWlc+m4OUcssY1I7yRVVJszas562XElWPo9Y4sOAtH2R4Cg6roh5U4wBFiFsN1/NI/5W91d9gts4fEIQkikfJ81reFebbULUZeoIpohHpv4Aam/C1PYRwwzyMMw4Gwy+rnXlqhQeiNsYpGdlhYAjfa1rnu+V3inNnxiNd9zvJJFyedec7UdqD07FOvyh7RSnkXfmF/EV5htQAoPTwxCniPaKJnB4j2ivMlHRXpxJQd5F/EUc65hYMPaK8w2pQFBrPTboy4WSd8kiMMsyp5zIPNlA3dYmnsq48l/SAvGcHiZAZoFGSQnSaA/g5ATvIFgeO6+t6xACjtQemcTtvDp50q+o3+yqrE9M8Ku4k8L6Aa3/pXnu1KtQxuc/TtNcse4E66XABJ324Cmo+lOLl1igJHMX3d2lj7axG1KoN6gk2m4uepj+k1/4Samw4TFHz8Sg7ghPvLCvPFqUBQei4sAc2Zp2JHIhR7LkcaZmxYSXLmDFFF2J11vpvte1twFeewKOivQybQUFpGYBbam+gA1JrMJ8e2PxZnD5OtBigLadThVJEk2ugkc3t48q4m1Hag9A7Nw0UESQw5QFUKACNF7zzO8nvqQwAFgR43FedwKMCg32SUjQEe2mJ8aE0uCfGsKoUG1jaFzw9tOx4pDoCO81iFGBQbkJV5j21HmnvuI8axa1Hag1fESrqF1PE/+XD1VVPtDCQ3fEMGt6Ja0YPzgNXPcfZWfWoUHQbZ6eS4hurwUZa2mdxlRR81NwH0j6qrIejsuIbrcbMznlmso7sx0A7lAqEKOg7jYGz0j+LjjUD9hbcyfOY+zxro02Zp+Ft3KIwPUGUn3msktR2oKO1C1HajtRkVqMLR0KBDMBvIHibUauDuIPrrYvIDGrYbE5lB+PG8A/m051deUjZKyybOKoNMdEGsPQKu7Xtw+LFDWBdcnyl9opRIGvCvVnwZPkL+yKzXyNbBiYT4yRFaTr5EjzAHIq2JZQdzEsRfko5mqmsfZCLXBF91xa/hffR2r0rs/aEWMfFYd4wVhkETh7Mr3RXvlI3doix5VifSfZCYXa3URj4vroSg32WQxtl7wCxHgBUWVygkX5S+0UpZF3Bh7RXprbuMgwsJnlUZFKKcqAm7uqLp4sKr/AChwINm4shVB6mSxAHKhrzsXUaEj2ijVwdxB9db35JIUOysOSqk3m1IB/Py1yflV6UYPEYd8NBm62OazfFlR8WXV7Nax1oazHrF5j2ih1i/KHtFeltnrEmFSRkWywqx7IJsEBPjup7ZU0M8Uc8agpIodSVAOVhcXHCqa8ylgN5FKJA3kVtXkUiU4BiVBPXSbwD6KU75K9kKkWInZRebES5bgfg45GVf3s59lE1iOYb7ijDrzHtraejcS/wCN7QGUWEcNhYWHYj4V0eIxsAxSYNowWkiaQHKpSysFKnjfW+62lDXna1KVdM3AbzwHia1bEdEsK22ljEaiL4OcS0YACF1k6rLl4KbhrbuyeddniNqJFiYMGE/CxyupFgqiLL2cvfmPhaouvO1EHHMe2ta6Z7Cih2jgZ4kVRLOqSKoAUsGUq1t1yC1+dh311/SHHw4SLrZI8y50SyKpIzsEB1toL3NMNeeBQLAbyK2HysbAhOEfEIiJJEVOZQFLKzBGVred51xfl3mpnkowirs2NmVbu0jkkDcJGUH2KKLy9MTUg7iKPMOY9tbF5Y8GpwSyKoHVyobgAaMGTh3sKuegMKnZ+GJVSerGpA76YcmC5hzFHccxW3eS+FTgVJVSetm3gH869QvJ3Epxe07qDbEm1wNO3LuocmP5hvvQzDmK2bojspTtDH4hlFhIIkuBbzUeS37nvpvFxL/j0Qyi3wU6WFvOl4UOTHOsHMe2lit86R7ZwuCCNOtg5IXKmbUC5vbdvrD9rzLJiJpE8x5ZXW4t2WdmXThoRpRZdRAKFqOjoCtR0KO1GlHQtSrUYFHMm1HalWo6DXvIB+L4n9cv8tK7+DLMAx/NyvbxRnQe6uC8gP4vif1w/lrXVdD8VnfGp+jxki+pkie/tZvZVSrnBTZ8x5Oyfsmx94Ncn5HPxKT/AFM/8Qq06B4jrcO8l75sTiyPD4TKF9wFUvkZxCthZowe1HiZLjjZrMp8DqPqmiJnQb8b2p/ql/kx1xPSzD9b0iiT/iYZvUirIfcprQ+i2zZIZ8c7rZZcQJIzcHMvVICdN3azDXlVBsvZy4jbuJxQZSuGCR24mRogtwd1lu4PfRYn+V+S2Ay/LngX2Sq//JVl5RPybi/1L/ZUXyhdHpcfHDHHIiCOUStnzdqysoAt9I+6rbpPs9sThZsOrBWkjZAxvYEi1zbW1BTeSH8lYfxm/ny1xHlW2HgIYjNh2UzSTt1gEpc9oSO/YzHL2rcNK7fyR/krD+M38+WuD6ReTjGdZLMrQESzOVUO4b4yVit7oANGF9eB30O2oP8Ak8/6b/pUz5Pfybg/1Ef8IqRtJOqwMiuR2MOwY8OzGQT7qY8n4/2bhP1Ef8Ioij8iX4g36+T+GOuxwcCRIsa7lGg4959ZPvrjvIn+IN+uk/hSrbZO0ut2ni4gezDFAn12MrufYUH1aCr6N/lvaH6uH+COuixOzY/hSYt3IZIniCkqEyswYsbi99Lb7a1zvRv8t7Q/VxfwR1zPlyjBxMFwDaJt4v6ZorqtmbTin2y/UuriPBmNmU3GfrlZlBGhtcXtxuOFSNt/lfA/qcT9iVwnkZlVMeykgZ4XVe9g0bZR9VWP1a0Xaez5X2jhZ1W8ccU6s1xoz5Agte5vru5GhUHp/wDjGzf9Wv2VddJocM8IXFsFizxm5YoM4cFAWB4tbTjXP9P8QvwvZsd+0cQJLclBVdeVy3uPKrbp1suTFYbqYrZusibtGwCrIrMb+ANEVflaGIOCcRhOruplJJzhQwIyi1rXC313XqXs7/L7GVtxTBl/BjEXPvNSfKAL7OxKje0ZUfSayr7yKn7RkhgwzmUXijj7Qy5roq6jLx0G6iqXpivX7IkbfeFJR9XLJf3VM8n/AOTsN+qH31Kj6vE4P4oWjmhIUWy2R0soy+jod3Conk9/J2Fv+iX76Cx2RBBHGFw4QR3Y9ggrmJJbUHfe965fyc/jW0/9S38ctTfJb+Ir+tm/mvULydfjW0/9S38ctB12GhWO4G9mZz3sxuf6equSxn5fi/0p/ilqzxG0c21IsODomGllYfOeSJU9gV/2qrMZ+X4v9Kf4paEXPSrZWDxCoMWQApJS8nV6kAHW4vpasMxqKssip5okdV1v2QxC68dLa1sXlG6Ny49IliaMGNmJ6wsPOAAtlU8qyLaWBaCaSFypaNipK3K3HK4Bt6qla8UW1HalAUdqKTajtR0KCjtQo6FGQo7UAKO1BcdH+k+LwSsmHlCK7ZmBRHubAXuym2gFSMB0wx8LyyRzBWmcPIerjOZwMt7FbLoBuqgtR0VfbH6Y4/DRCGCYKgLMAURtXYuxuyk6liag7G2ziMLKZsPIUdvOsAVYE3syEWIuTw0vpaoAFGBQddjPKNtORCnWRx30zRR2f1Fi1vECrjyP7bw2GXE/CJ0jLtGQZG1bR8xud5udT31nYFHQx1k/lB2lnbLiBlzNl+Li825y+hytXYeT/pyrwyHaGKjD9ZZMwSM5Mi7goF+1m1rJLUdqGOh6N9JtpRRphsI7FVzFY0iSRu0xdj5hO9j7atNqdINuRqGnEqIpDZmw6BQQbglslh667jyQ7PjjwCShRnmLM7cSFdkRb8gFGnMmrXojtlsbHOXRV6vESwAC5DIhABa/Eg68KrNY/jekW08ajQs8kqaZ0iiGo4Z+qS9jbcdDapGzulG1YQuGiaQdWoVY+oVnVQBa6lM26xueddv5PcCkG0tpQxiyIYcq8AHDyBR3DPYdwqw6PbNvtXaGJI3GKJD3mGJ5P+n76DL9nbf2jgE6mNnhUkvlkiUEk2BYdYl+AqVsDE7VV5MRhklLTnM8ghDBzdmBGZSLXZvN+6u16Z4BMRtfAxSDMhR2YHcQmdwDzBKgEcr10XSnbLYQ4VURWE2JjgN7jKj3uVtxFhbhQZCm3toQ4mSTMyYiXKr5olDNayoBGU03DcNaLbbbRxbq+IindlGUHqGWwve1lQX1rTvKfBGuHjxbJd8PNC4ItmKmVFZL8jmB8QKsuh3SJMfE8qRugR+rs5UknKrXGU7u3b1UGILg8TCRKIpoyhBD9XImVrgLZiNDcgeuutj6W7aVcvVO3DM2FfP46ALf1VdeULpShZ9ndW+frIO3dcukkU2699wt41223tojDYeSdlLCNcxVbAnUCwvpxoMNlnxzYoTOszYkZZBmiYuAp7JEeWwQHha2+rmbpXtlFLO0qqN7NhkVRw1JjsK6Lort1cdtbrkRkAwjR5WIJusoa+nDtj2V1XTyDrNn4pRvELsPFBnHvUUGT4/am1cUqGTr5EBWRQsNkJUhkbsIA4vYi9xRbX6VbRkR4J5GAYZXRoo0axsbHsBhcWPrradjwdXBFH8iONP2VA+6sY8pX5TxPjH/ACIqiz2RgOmOPijSKKbKiAKo6uI2A3C5W5oYPpjj4kWOOYKi6AdXGba34pVDajtRrIudldK8bh4xFDLlQFmt1cbasSzG7KTvJpOzekuLheV4pcrSvnkOSM5muxvYqQNWO61VNqO1DFnF0ixa4hsUJfjnXIXyIezZRYKVyjzF3D7TS36S4szjEmX41U6sPkj0TU2y5cvpHW1VVqFDHR/+udpf7x//ACi/+FUONxLzSNLIczuSzGwFyeNgLCm6FCQVHR2owKArULUoLSstBz1KAoUdGRWpVCgBRQAowKMClCgICjo6MCgKjAowKMCgAFC1HQorePJd+TMP4SfzZKz/AGLtTakLYlcDD1kRxMxY9UZO3msRcMOAXTvrtvJHi1k2dGgILRtIjDiLuzrcd6sKn9DNjyYRJ1kKky4mWZcpJGRyMt7gWaw1HvNVhzXkumnkxuOfErlmZcOZFy5bEKwXskm3ZCn11oChEJ3AyNf6TZf/AIp+7XEdAcYk+0tpTRkMjGEKw3EIHjuDxByXB4irbau0b7UwmGB82OWZx3lSkf2SUKh7c/LeB/VTfwSUx5XpHWPCNELyLikKC17uFYoLcdbaUjpbi1h2zgJHIC5HQk7h1meNdeHaZavel2x5MS2FMZUdTiYpnzEi6JfMFsDdt2mnjQZ10q2tteXDumLhyQkoWbqiliJFZO0WNu0FHrrqPIj+Kzfrz/KiqT5X8Yi4ExEjPLIgVeJCOsjG3IZRr3jnUbyJfis368/yoqh05Dp4P9ry/rIf4Iq17bZgEDnEZept28wutrjeBv1tWQdO/wArSfrIP4Iq13pDs74Th5IM2TrFy5rZrag3tcX3VSuJ6LSYVtsMcHk6r4KfwYKrnzrm0IGvm127yCSaWBtV6qNiOYkaZG9yCuL6J9HfgG01j6zrM+Gke+XLb4yMWtc3rovhFtrdX8vBg+tJmt7nNCrWPEAzPF8iON7fTaVR/LPsrGvKUP8AaeJ8Y/5EVajsmbPtLGj9HFhI/wCfJ/1KzDykflPE+Mf8iKpV8frnbUdqOhajQrUdqMChagK1HajApQWgSFowtLC0YFAgLSgtLtRgUCQKO1GBR2oOboWowKUBRkQFKAowKOiitR0YFGBQEBSgKAFHQFajoUYFAVqUBRgUq1FP7Ox00D9ZDI8bbroxFxyYbmHcb1N2j0ixs6GOXEyOh0K3VQw5MEAzDuN6qwKOgk4DaE0FzDJJFmsG6t2S9r2Btvtc+2j/AMTxHW9f10vWWt1mds9rWtnve1qigUYFA/jcbLMQ00kkhAsC7FyByF+FWGC6S46JQkeKkVRoASHsOQLgkDuFVNqOiYexuKkmcyTSPI50zOxY24AX3DuGlPYHaeIhBWGaWNScxEbsoJsBcgHfYAeqodGKKdnxMjuZHdmckEuzEsSLAHMddLD2VP8A/UGN/wB7xH/7X/rVYBSrUMTTtfE5xIcRL1gUoH6x8wUm5UNe4FwDagdrYgyCUzymQLlD9Y2cLe5UNe4F+FQ6Oglw7WxKs7rPKHe2dhI4Z8osuY3ubDQXqPiZ3kcvI7O7WuzksxsAouTqdAB6qRRgUAtRgUAKUBQAClBaMClAUCQtHalWoWoCtR2o7UYFAm1GBSgKUFoEgUrLSgKVag5DrDSg55/391MZv7/pfX2XpQP98fsv+7RDwc8/7++lB/7/AO/9aYB/vfb1C9vatKD8R6zw77tcD2s1BIDf3/23+sXo8/H+n27vaQajX0vpl5mwXuszC37KHxpea1idL7r5lJ7hvkb1ZRQSA+vfy118BbN+6w76Af2DfusNfSObKPWw+jTF9cttTrky3J/9pTb1yMaUpJawuWHBSrMv0pD8XEPoi9A9n4c92+519EWzN9VAPnU4rb+4drzez9I3yR8+0zt3VGjNw2WzD0iGKxD9ZKe1Ie4UrrBlDErlXzZJFyxr3QwDz2+cfdQPhxYHSx0U2Yq27zE/CTHv7K0td+WxJHaK5lDKOc0g7ESfNF2771HaTKM7F0z6AntYqW/Bf0SHu99CTs5YmjuxI6vBoSQDwadt7Nxt7bCgk50yFywCk2MgU9o/o8JETdzfTO+nhUlVPWBBEvWlexCWOWJLXM2Lf5VtcosBx4CokbP1uWNhJirayaCHCqN4ThcD0tw4XNJw4SRXjR2TDIc+JxJHbma/mrfmb5V9ZoJsZhCdYSTh4TZpfNkxcv6KMehEOJtcDW9zpKjwjHq4CiDFYlhIVFwmGi85VtfRiLsb3so5moOGxKsBjZUCwQ/F4TD+i0g1F+YB7TNxNKOJeDDvO7FsRjc1mPnLCT227i5sB80UVdQLhmOInEY6iFBFHe/xsrCyyHXU2DvbvWun2NsDDGTDwyRKzdSZZTdtWdlRVOvAtf1VyE+GYNhNmoe0CsktuMsliQforlX111Wx9o5sXipgewhyL9GGN2+1UNAnZGycJIjO0S6tpYtorTTIvHgAg9VMDAYQLs+Vo1yTDqpdW1kdLK+/Qh0f21SbMmk+A4mzMWEWEZbcD17HT20nE4pn2PE2oaKaRSbXIKvnXdu0kagLG4IJHOgVeuwkpdr3+NgJAuwv6JyE29FjTWKWDMG8zD4tbRy72w0y+cjc0DGxv6LAjcae23jxHi4MdYmLExKZRvUhl6uZPcdO4VBXDLFNLs6Zh1UpDRSHcrkXgl8CDkagRZsxXq1+EYcES4fXLPGPz0LDUOBrYbxYgbxTHWx5A4cmF27E9gXhf9FiYxoV+cLaagndRKJZviCSmOwl+qe9mkRN8RPFl3qeINqZjxJkz4qBVEgBGKwxHYkX0pFXkeI3qdRQp+R2z5SqiRhfq83YkXg+Fl4H5jX+6mBObXBJCbzk7afNnh3/AF0PDdwqOWjERaNTLhSbvGT8Zh3PFW5cm3HcaEr2Cuzlk3R4pB8YnJJl9LwOvIndQPtiGA3gBtxzDI36qa1r/MkHroziXuRrmtquWzAczGTdvpIx8KjSsVPaKRl9zqM2GmHz13I3Mj2CksLHqyoQ7xFIbxn50Mu9PC/HfQSBi2tfNoONwQOYLZez4Oq+NA4x+e/duF/o62b6rnwqMGJa3a6waZWOSZR8yTdIO476SrXuBcn0lChX788Ldl/FbGhqV8Mk+UbjhbX1jLcetR40k42S3nHx7P2+b+96qi3uNNQPkguF8Y27cf1Taiz+le4+UCXHhnW0ifWBoJRx0nyj7B/S59QND4fL8s+wfZ/W1Qy2l+B46ZT9dRl/aWksdNdBwva3qOqezLQTv8Rl+Wf3fttb2Xof4jL8s+wf0uagFjx9+nsubH1PQLW8e/Qn1G1/2jQWH+Iy/LPsH9NKL/EJfln3f0qFfh7t3uNvvo9e/wBpHuuPsoGA2tuPLef2U19rUd/R/d84/sJ2R6yaQmo07Q45fi4x4ne1GmosvaHEJ2EHi280Q5xy8eX4Rv2B2F9dKGptvYcB8Y4/5EpCa9he382PsoPpPvNC48zzj+jh0X6z7zQOKbtpfNyQ9ZJ9aQ9lB4UpDqQtyx3pGbt/7kzbh4U1KQvZc+EMP/Ow3++lz9lcspyLwgj848s5/reiFJvyAZjxjhNl8ZJd7e310pRmOSwkYa9VH2YU73Yed/etIk7KfG/ExnURJ+EfvYnX1n2UZBMd5PiIOCL+Ek9ureJ0oHFOdggAmddyjs4eIcyNzW57vGjR2aS0dp5gNZGt1UQ+YDppzOmmgppQZI7/AIDCg8POkP2yN7hQhJnUpGBDhk1djx73PptyWgegds5XDnrJjcyYltyDjkJ80fO38qLDalocKbkgmbEtp2fSsT5qe9qbjYz/AOXww6uFe07tvIG+SRvsWgz9aRg8IDkv2nOhkI3u54IOAop+NRLfC4U5IV7U0zaZwN7vyUeilLjC4pxBEerwkN3ZjvsPOlfm7cBwvUXHzDs4LC3ZSwDsN8sm79gcBTm2pVgjGChN9Q0zj05PkD5q7vGgmQFcbiQLZMJAt7cEhTf9dz9vdUzZE4xWMbEzLaKBetK8FSPSKIeu3vqBtY/BcOuFH4SS0s5G8cY4vADU0/ij8GwMcX5zEHrX59Wuka+s60VadEsSxmxGOk1MaSOD/wARvNH7TD2VO6OPkwOIkvqYZjfvcrEp9xqpmb4PssD0ppBfmVQFj+8R7KsJSI9mSgHeIIvXcu1A9s8BcNigOGHwreyW9FsNQ2HxuH4LLG48JFMZ95WkYZ7x44A7sNF+7IaT0cf/ADeJi/SYfMPpIEcfYaCDh1OI2ZJFvkwspYDjke9/3gfbUHGt8JwKyjWXCfFvzMLnsN9VgR4GrHo/KI9oSwnzJwyd3bGZD+0PfVVsbEjC4xopR8U5aKRT+jfQ+w2PqoBtKVsRAuMjNsRBlWYrvIH4KYfYaaxUrSgbQw/ZlQjr0Xg27rAvFG4jnTaM2z8Y6MMyAlGB3SRP9uhBpOMU7PxIeI54pFzLfVZIm3o3eN3soFM9wcZhAFIFp4d6rfecvpRNy4fYhCAGxGFAKEfHYZu0FHE29KPkd4osehwsiYrDG8Mlyt9QPlxOP70osTHktjcGSq37abzGx3qRxQ0QcRGRnw4zxHWXDOblO9eJHJhqONJSxQmIddDvaF/wkfepGvrHrFDKJf8AM4TsSp2pIl97xjivNaTAVnPWQkRYgalQcqyHiU+S3duNApe0nY+PjH5ttJo/okakeGndRA5xdT1yjgezOg7iPO94psOsr6/EYhTvHZRm7x6De6hKwLZZgYZhukXQHkWA/iFApWz6qett9SdPWPP99EjZjdTnI4r8XMviNz0nEmzAYhSrejMnHvNtG8d9DEk2DSjOvozR6MOVzx8DQBTc3XtHiV7Eg+kp7LUlDr2dTxy/Fv8AWQ9lqEl2GY2mQemuki+PH23oh2x2SJQODdmRfA8aA0Othv4gfFv60bstQB9Efs+Y37Ddk+qkhs3ZBD29CTRx9FqGb0CbfMlFx9V+FFK3dnd83zD+w91PqpW7Td3WkX3KbeykFsvZa6fNk7cZ8DvFKRGtorW+Y5y+rl4UDKnMdAZDzbsoPVRuQSFYmRuEaaIPZv8AVRUKMnJtBaV8o4RR7/rW0HrvShmKakQRch57/e32UKFAeGZiCIF6tPSlfziPpcPAUnDyBWyYdS8h3ysN3MqDoo7zQoUBs6Qm/wCGnPE9pFPd8tqXLGIz1uLPWSHVYr+wyfJHzaKhQGqNP8fiWyRLoANL23JGv30AXxZEaARwR68kQcWY8WNChRScZiesy4XCqerv9aRt2Zjy7uFPbQnXCxHDQkGRvw0g/lqeQ40KFCHcCPgUHXMPj5RaMcUQ737ieFJ6KQKufGTapDqoPpynzB3660VCgTsaBsZih1hvnYySNyUat7tKkbaxXwrFkr5mbKo5RpoB7B76FCirTpmbzYfCr+bWND9JyGep3SIZMCiD85iSfUi5ftoUKA9lrYbQU/7qPtvTGxpRHtHDNwkQKfrKVt9lFQoKzpKjQYiOUb1YgHvjbT7Ke8okSmSPEJ5sqK5+sP6g+2hQoGNuf5nBx4gaywWil5tGfwbn7Kj7FcYmBsG57a3eBjwO9o78jQoUEPYGOVC+HnHxUmjA70caBxyIovjcBOQbMpG7ekkZ+3ShQolHtGDqiuKwrERsbi3nRtxRu7lS5YkxYMkQCTrq0Y0D/OTk3dQoUQ3HiUxAEc/ZkGiy2323LJz8aS0zR/E4pCyei3pKOaNxXuoUKHQMXhXeJYG56j/waihUi74ZiQfOjbUgciPSFChRTcZjc3Q9VJy3KT3H0fCilkUtaZSjj0009ZA0PiKFCh0XMzBQZVEibg6ntD17/UaJCSvYYSL8h/PHh/2o6FDsUTi9o2Knij6r6iablaIEh42VuIRuz6qFCg//2Q=="
+             alt="Моделирование систем"
+             style="max-width: 100px;"
+        >
+
+<div>
+  <h5>Моделирование систем</h5>
+  <button type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    class="btn btn-primary"
+            >
+                Подробнее
+            </button>
+</div>
+</div>
+        </div>
+      </div>
+
+    <!-- Modal1 -->
+    <div id="exampleModal"
+         tabindex="-1"
+         aria-labelledby="exampleModalLabel"
+         class="modal fade"
+         style="display: none;" aria-hidden="true"
+    >
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Администрирование в ИС</h5>
+                    <button type="button"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                            class="btn-close"
+                    ></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div class="row">
+                            <div class="card mb-3 col-sm-12 col-md-6 col-lg-4">
+                                <div class="row g-0">
+                                    <div class="col-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Дата</h5>
+                                            <button type="button"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal"
+                                                    class="btn btn-secondary btn-sm"
+                                            >
+                                                Просмотр
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row g-0">
+                                    <div class="col-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Дата</h5>
+                                            <button type="button"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal"
+                                                    class="btn btn-secondary btn-sm"
+                                            >
+                                                Просмотр
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row g-0">
+                                    <div class="col-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Дата</h5>
+                                            <button type="button"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal"
+                                                    class="btn btn-secondary btn-sm"
+                                            >
+                                                Просмотр
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button"
+                                data-bs-dismiss="modal"
+                                class="btn btn-secondary  btn-sm"
+                        >
+                            Закрыть
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal2 -->
+    <div id="exampleModal2"
+         tabindex="-1"
+         aria-labelledby="exampleModalLabel"
+         class="modal fade"
+         style="display: none;" aria-hidden="true"
+    >
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Методы и средства проектирования</h5>
+                    <button type="button"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                            class="btn-close"
+                    ></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div class="row">
+                            <div class="card mb-3 col-sm-12 col-md-6 col-lg-4">
+                                <div class="row g-0">
+                                    <div class="col-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Дата</h5>
+                                            <button type="button"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal2"
+                                                    class="btn btn-secondary btn-sm"
+                                            >
+                                                Просмотр
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row g-0">
+                                    <div class="col-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Дата</h5>
+                                            <button type="button"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal2"
+                                                    class="btn btn-secondary btn-sm"
+                                            >
+                                                Просмотр
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row g-0">
+                                    <div class="col-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Дата</h5>
+                                            <button type="button"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal2"
+                                                    class="btn btn-secondary btn-sm"
+                                            >
+                                                Просмотр
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button"
+                                data-bs-dismiss="modal"
+                                class="btn btn-secondary  btn-sm"
+                        >
+                            Закрыть
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <!-- Modal3 -->
+    <div id="exampleModal3"
+         tabindex="-1"
+         aria-labelledby="exampleModalLabel"
+         class="modal fade"
+         style="display: none;" aria-hidden="true"
+    >
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Добавить</h5>
+                    <button type="button"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                            class="btn-close"
+                    ></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <H5>Дата</H5>
+                        <input type="datetime-local">
+                       <H5>Группа</H5>
+                       <select>
+                           <option>ЛПб-ИСиТ-18-1</option>
+                           <option>ЛПб-ИСиТ-18-2</option>
+                           <option>ЛПб-ИСиТ-19-1</option>
+                           <option>ЛПб-ИСиТ-19-2</option>
+                           <option>ЛПб-ИСиТ-20-1</option>
+                           <option>ЛПб-ИСиТ-20-2</option>
+                           <option>ЛПб-ИСиТ-21-1</option>
+                           <option>ЛПб-ИСиТ-21-2</option>
+                       </select>
+                       <H5>Предмет</H5>
+                       <select id="inputh">
+                        <option>Администрирование в ИС</option>
+                        <option>Методы и средства проектирования</option>
+                        <option>Экономика предприятия и производственный менеджмент</option>
+                        <option>Операционные системы мобильных устройств</option>
+                        <option>Мониторинг лесных экосистем</option>
+                        <option>Моделирование систем</option>
+                    </select>
+                       <table class="table table-striped table-sm">
+                           <thead>
+                               <tr>
+                                   <th scope="col">Имя</th>
+                                   <th scope="col">Отметить</th>
+                               </tr>
+                           </thead>
+                           <tbody>
+                               <tr>
+                                   <td> Артем Громов</td>
+                                   <td><input id="inputh"></td>
+                               </tr>
+                               <tr>
+                                <td>Дмитрий Тихонов</td>
+                                <td><input id="inputh"></td>
+                            </tr>
+                            <tr>
+                                <td>Даниил Шкунтик</td>
+                                <td><input id="inputh"></td>
+                            </tr>
+                            <tr>
+                                <td>Кирилл Вотяков</td>
+                                <td><input id="inputh"></td>
+                            </tr>
+                            <tr>
+                                <td>Алексей Григорьев</td>
+                                <td><input id="inputh"></td>
+                            </tr>
+                            <tr>
+                                <td>Кирилл Захаров</td>
+                                <td><input id="inputh"></td>
+                            </tr><tr>
+                                <td>Кирилл Воробьев</td>
+                                <td><input id="inputh"></td>
+                            </tr><tr>
+                                <td>Миха Ивченко</td>
+                                <td><input id="inputh"></td>
+                            </tr><tr>
+                                <td>Андрей Григорьев</td>
+                                <td><input id="inputh"></td>
+                            </tr><tr>
+                                <td>Илья Фокин</td>
+                                <td><input id="inputh"></td>
+                            </tr><tr>
+                                <td>Аня Суворова</td>
+                                <td><input id="inputh"></td>
+                            </tr><tr>
+                                <td>Игорь Соколов</td>
+                                <td><input id="inputh"></td>
+                            </tr><tr>
+                                <td>Александр Дмитриев</td>
+                                <td><input id="inputh"></td>
+                            </tr>
+                           </tbody>
+                       </table>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button"
+                                data-bs-dismiss="modal"
+                                class="btn btn-secondary  btn-sm"
+                        >
+                            Закрыть и сохранить
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"
+></script>
+
+</body>
+</html>
